@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Containers", "Containers", "{A77DB53F-5B1D-402C-BA7D-17BFB51AAA44}"
+	ProjectSection(SolutionItems) = preProject
+		containers\docker-compose.yml = containers\docker-compose.yml
+		containers\README.md = containers\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "elasticsearch", "elasticsearch", "{FB742707-5D80-4FFA-8AB4-CCF5F4A891E1}"
+	ProjectSection(SolutionItems) = preProject
+		containers\elasticsearch\Dockerfile = containers\elasticsearch\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{3A9C0F7C-5990-407C-ACCD-85FDE241292D}"
+	ProjectSection(SolutionItems) = preProject
+		containers\elasticsearch\config\elasticsearch.yml = containers\elasticsearch\config\elasticsearch.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kibana", "kibana", "{C7555432-14A1-4B54-8C1C-E6AEDE6BC34B}"
+	ProjectSection(SolutionItems) = preProject
+		containers\kibana\Dockerfile = containers\kibana\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{1572DE84-99CC-4BC8-97D1-D20C3AB748BD}"
+	ProjectSection(SolutionItems) = preProject
+		containers\kibana\config\kibana.yml = containers\kibana\config\kibana.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "logstash", "logstash", "{0ABE5F74-98D5-4F29-B97D-7737F76F0891}"
+	ProjectSection(SolutionItems) = preProject
+		containers\logstash\Dockerfile = containers\logstash\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{3AD7F9E3-C92A-48E8-B8CF-54848FA62B72}"
+	ProjectSection(SolutionItems) = preProject
+		containers\logstash\config\logstash.yml = containers\logstash\config\logstash.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "patterns", "patterns", "{09993B8E-7D18-4AC5-B6B8-4E44C6033747}"
+	ProjectSection(SolutionItems) = preProject
+		containers\logstash\patterns\grok-patterns = containers\logstash\patterns\grok-patterns
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipeline", "pipeline", "{2740D043-DC46-4CDB-9EB0-4489C180630A}"
+	ProjectSection(SolutionItems) = preProject
+		containers\logstash\pipeline\logstash.conf = containers\logstash\pipeline\logstash.conf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "template", "template", "{BE368C13-25AA-4C7F-BC82-730AB6ADDBBA}"
+	ProjectSection(SolutionItems) = preProject
+		containers\logstash\template\template.json = containers\logstash\template\template.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetELKSample", "DotnetELKSample\DotnetELKSample.csproj", "{D504300E-CB23-4946-9A6D-62F74832920E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D504300E-CB23-4946-9A6D-62F74832920E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D504300E-CB23-4946-9A6D-62F74832920E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D504300E-CB23-4946-9A6D-62F74832920E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D504300E-CB23-4946-9A6D-62F74832920E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB742707-5D80-4FFA-8AB4-CCF5F4A891E1} = {A77DB53F-5B1D-402C-BA7D-17BFB51AAA44}
+		{3A9C0F7C-5990-407C-ACCD-85FDE241292D} = {FB742707-5D80-4FFA-8AB4-CCF5F4A891E1}
+		{C7555432-14A1-4B54-8C1C-E6AEDE6BC34B} = {A77DB53F-5B1D-402C-BA7D-17BFB51AAA44}
+		{1572DE84-99CC-4BC8-97D1-D20C3AB748BD} = {C7555432-14A1-4B54-8C1C-E6AEDE6BC34B}
+		{0ABE5F74-98D5-4F29-B97D-7737F76F0891} = {A77DB53F-5B1D-402C-BA7D-17BFB51AAA44}
+		{3AD7F9E3-C92A-48E8-B8CF-54848FA62B72} = {0ABE5F74-98D5-4F29-B97D-7737F76F0891}
+		{09993B8E-7D18-4AC5-B6B8-4E44C6033747} = {0ABE5F74-98D5-4F29-B97D-7737F76F0891}
+		{2740D043-DC46-4CDB-9EB0-4489C180630A} = {0ABE5F74-98D5-4F29-B97D-7737F76F0891}
+		{BE368C13-25AA-4C7F-BC82-730AB6ADDBBA} = {0ABE5F74-98D5-4F29-B97D-7737F76F0891}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F3DA24B-10B3-4070-BD7A-BC0E5DE86A2B}
+	EndGlobalSection
+EndGlobal

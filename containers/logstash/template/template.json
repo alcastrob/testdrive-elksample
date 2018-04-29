@@ -1,0 +1,56 @@
+{
+	"template" : "logstash-*",	
+	"mappings": {
+		"doc": {
+      "properties": {
+        "intField": {
+          "type": "integer"
+        },
+        "geoip": {
+          "dynamic": "true",
+          "properties": {
+            "ip": {
+              "type": "ip"
+            },
+            "latitude": {
+              "type": "half_float"
+            },
+            "location": {
+              "type": "geo_point"
+            },
+            "longitude": {
+              "type": "half_float"
+            }
+          }
+        },
+        "host": {
+          "type": "text"
+        },
+        "machineName": {
+          "type": "text"
+        },
+        "module": {
+          "type": "text"
+        },
+        "msgId": {
+          "type": "text"
+        },
+        "longField": {
+          "type": "long"
+        },
+        "procId": {
+          "type": "text"
+        },
+        "stringField": {
+          "type": "text"
+        },
+        "severity": {
+          "type": "text"
+        },
+        "url": {
+          "type": "text"
+        }
+      }            
+		}
+	}
+}
